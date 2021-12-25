@@ -1,6 +1,7 @@
 # Dependencies maintained by OCCRP
 banal==1.0.6
-followthemoney==2.7.3
+#followthemoney==2.7.3
+git+git://github.com/tolgatasci/followthemoney.git@master#egg=followthemoney
 followthemoney-store[postgresql]==3.0.3
 fingerprints==1.0.3
 servicelayer[google,amazon]==1.18.2
