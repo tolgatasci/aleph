@@ -16,7 +16,8 @@ ENV LANG='en_US.UTF-8'
 
 RUN groupadd -g 1000 -r app \
     && useradd -m -u 1000 -s /bin/false -g app app
-
+RUN apt update	
+RUN apt install -y git
 # Install Python dependencies
 RUN pip3 install --no-cache-dir -q -U pip setuptools six
 
